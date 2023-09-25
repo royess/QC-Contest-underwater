@@ -3,7 +3,7 @@ DQAS-style optimization for hybrid quantum-Clifford type circuit
 
 Modified from: https://github.com/tencent-quantum-lab/tensorcircuit/blob/master/examples/clifford_optimization.py
 """
-
+import sys
 import numpy as np
 import tensorflow as tf
 
@@ -11,18 +11,17 @@ import tensorcircuit as tc
 # import tensorcircuit.quantum as qu
 from scipy.sparse import load_npz
 
-import pickle
-
 ctype, rtype = tc.set_dtype("complex64")
 K = tc.set_backend("tensorflow")
 
 n = 12 # the number of qubits (must be even for consistency later)
-ncz = 3 # number of cz layers in Schrodinger circuit
+# ncz = 3 # number of cz layers in Schrodinger circuit
+ncz = int(sys.argv[1]) # number of cz layers in Schrodinger circuit
 nlayersq = ncz + 3 # Shrodinger parameter layers + Heisenberg last layer
 
 # training setup
-epochs = 100
-batch = 1024
+epochs = 2000
+batch = 800
 
 # fix random seed
 seed = 42
@@ -244,7 +243,8 @@ vvag_hybrid = K.jit(
 # )
 
 def train_hybrid(stddev=0.05, lr=None, epochs=2000, debug_step=50, batch=256, verbose=False):
-    params = K.implicit_randn([n//2, 2], stddev=stddev)
+    # params = K.implicit_randn([n//2, 2], stddev=stddev)
+    params = K.ones([n//2, 2], dtype=float)
     paramq = K.implicit_randn([nlayersq, n, 3], stddev=stddev) * 2*np.pi
     if lr is None:
         lr = tf.keras.optimizers.schedules.ExponentialDecay(0.06, 1000, 0.5)
@@ -300,9 +300,11 @@ def train_hybrid(stddev=0.05, lr=None, epochs=2000, debug_step=50, batch=256, ve
 if __name__ == "__main__":
     print('Train hybrid.')
     ee, params, paramq, loss_history = train_hybrid(epochs=epochs, batch=batch, verbose=True)
-    np.save('saved_models/hybrid_params.npy', params.numpy())
-    np.save('saved_models/hybrid_paramq.npy', paramq.numpy())
-    np.savetxt('saved_models/hybrid_loss_history.txt', loss_history)
+
+    save_name = f'shvqe_ncz{sys.argv[1]}'
+    np.save(f'saved_models/{save_name}_params.npy', params.numpy())
+    np.save(f'saved_models/{save_name}_paramq.npy', paramq.numpy())
+    np.savetxt(f'saved_models/{save_name}_loss_history.txt', loss_history)
     print('Energy:', ee)
 
     ref_value = -74.38714627
@@ -314,5 +316,5 @@ if __name__ == "__main__":
 
     c = hybrid_ansatz(params, paramq, "most", train=False) # output the compact circuit
     print(c.draw())
-    with open('saved_models/hybrid.qasm', 'w+') as file:
+    with open(f'saved_models/{save_name}.qasm', 'w+') as file:
         file.write(c.to_openqasm())

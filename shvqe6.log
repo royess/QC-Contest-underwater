@@ -1,0 +1,493 @@
+Train hybrid.
+----------epoch 0-----------
+batched average loss:  -34.637924 minimum candidate loss:  -36.61767
+probability converged
+strcuture parameter: 
+ [[0.9400011  1.059999  ]
+ [1.0599946  0.9400055 ]
+ [0.94000113 1.0599989 ]
+ [1.0599988  0.9400012 ]
+ [1.0599991  0.94000083]
+ [1.0599934  0.9400066 ]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-53.196808, shape=(), dtype=float32)
+----------epoch 50-----------
+batched average loss:  -78.54422 minimum candidate loss:  -78.60845
+probability converged
+strcuture parameter: 
+ [[-0.26506504  1.9254019 ]
+ [ 2.009134   -0.5763085 ]
+ [-0.3700796   1.9838151 ]
+ [ 1.832343   -0.23153795]
+ [ 1.8026915  -0.0334554 ]
+ [ 1.8887616  -0.31870556]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.610634, shape=(), dtype=float32)
+----------epoch 100-----------
+batched average loss:  -78.66224 minimum candidate loss:  -78.67689
+probability converged
+strcuture parameter: 
+ [[-0.36413878  1.9499096 ]
+ [ 2.063892   -0.9665558 ]
+ [-0.47386464  2.0083218 ]
+ [ 1.89558    -0.6041371 ]
+ [ 1.821727   -0.10039307]
+ [ 1.9579201  -0.79001397]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.67708, shape=(), dtype=float32)
+----------epoch 150-----------
+batched average loss:  -78.67209 minimum candidate loss:  -78.6795
+probability converged
+strcuture parameter: 
+ [[-0.37893885  1.9520346 ]
+ [ 2.068764   -1.0312728 ]
+ [-0.48770347  2.0100877 ]
+ [ 1.902977   -0.6747395 ]
+ [ 1.823658   -0.11090891]
+ [ 1.9894454  -1.2042774 ]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.679535, shape=(), dtype=float32)
+----------epoch 200-----------
+batched average loss:  -78.67343 minimum candidate loss:  -78.68129
+probability converged
+strcuture parameter: 
+ [[-0.39340276  1.9539999 ]
+ [ 2.0703793  -1.0552741 ]
+ [-0.5051561   2.0121727 ]
+ [ 1.9057324  -0.7040159 ]
+ [ 1.824812   -0.11743433]
+ [ 2.0069828  -1.5563542 ]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.68136, shape=(), dtype=float32)
+----------epoch 250-----------
+batched average loss:  -78.67593 minimum candidate loss:  -78.6835
+probability converged
+strcuture parameter: 
+ [[-0.41157615  1.9564257 ]
+ [ 2.0717943  -1.0769243 ]
+ [-0.5405936   2.0162976 ]
+ [ 1.9083105  -0.73237884]
+ [ 1.8277727  -0.13438897]
+ [ 2.017465   -1.8553927 ]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.68332, shape=(), dtype=float32)
+----------epoch 300-----------
+batched average loss:  -78.67757 minimum candidate loss:  -78.686325
+probability converged
+strcuture parameter: 
+ [[-0.43724406  1.9597709 ]
+ [ 2.0736237  -1.1056322 ]
+ [-0.5967347   2.0225313 ]
+ [ 1.9105307  -0.7575465 ]
+ [ 1.8324279  -0.16168891]
+ [ 2.0238855  -2.101655  ]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.6865, shape=(), dtype=float32)
+----------epoch 350-----------
+batched average loss:  -78.680954 minimum candidate loss:  -78.690674
+probability converged
+strcuture parameter: 
+ [[-0.4825663   1.965467  ]
+ [ 2.0759218  -1.1429383 ]
+ [-0.6841131   2.031552  ]
+ [ 1.913752   -0.79526275]
+ [ 1.8395376  -0.20499596]
+ [ 2.028224   -2.3137865 ]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.690796, shape=(), dtype=float32)
+----------epoch 400-----------
+batched average loss:  -78.68495 minimum candidate loss:  -78.69738
+probability converged
+strcuture parameter: 
+ [[-0.55315423  1.9738243 ]
+ [ 2.0794833  -1.2035655 ]
+ [-0.81120837  2.0433044 ]
+ [ 1.9182785  -0.8508416 ]
+ [ 1.8505697  -0.27642575]
+ [ 2.0312822  -2.4978385 ]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.69767, shape=(), dtype=float32)
+----------epoch 450-----------
+batched average loss:  -78.69107 minimum candidate loss:  -78.704185
+probability converged
+strcuture parameter: 
+ [[-0.66207886  1.9855797 ]
+ [ 2.084057   -1.2872056 ]
+ [-1.0005308   2.0582488 ]
+ [ 1.9247696  -0.9363351 ]
+ [ 1.8653704  -0.38169047]
+ [ 2.0337436  -2.6763225 ]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.70442, shape=(), dtype=float32)
+----------epoch 500-----------
+batched average loss:  -78.69235 minimum candidate loss:  -78.708755
+probability converged
+strcuture parameter: 
+ [[-0.79972804  1.9986569 ]
+ [ 2.0893073  -1.392688  ]
+ [-1.2293205   2.072855  ]
+ [ 1.9325047  -1.0488747 ]
+ [ 1.8819866  -0.5160271 ]
+ [ 2.0354989  -2.827552  ]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.70876, shape=(), dtype=float32)
+----------epoch 550-----------
+batched average loss:  -78.6973 minimum candidate loss:  -78.71147
+probability converged
+strcuture parameter: 
+ [[-0.9528833   2.0111248 ]
+ [ 2.094483   -1.5091681 ]
+ [-1.4532092   2.0841248 ]
+ [ 1.9400586  -1.1731133 ]
+ [ 1.8984907  -0.67205817]
+ [ 2.0369136  -2.9691157 ]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.711555, shape=(), dtype=float32)
+----------epoch 600-----------
+batched average loss:  -78.69918 minimum candidate loss:  -78.71336
+probability converged
+strcuture parameter: 
+ [[-1.1136429   2.0222106 ]
+ [ 2.0992942  -1.6314294 ]
+ [-1.6637231   2.0925562 ]
+ [ 1.9466778  -1.2971678 ]
+ [ 1.912768   -0.83232075]
+ [ 2.038091   -3.1047575 ]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.71331, shape=(), dtype=float32)
+----------epoch 650-----------
+batched average loss:  -78.7032 minimum candidate loss:  -78.714325
+probability converged
+strcuture parameter: 
+ [[-1.2629608  2.030928 ]
+ [ 2.1032488 -1.7452444]
+ [-1.8652368  2.0990565]
+ [ 1.9526134 -1.4239343]
+ [ 1.9246979 -0.9913936]
+ [ 2.0390606 -3.2325494]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.71437, shape=(), dtype=float32)
+----------epoch 700-----------
+batched average loss:  -78.704346 minimum candidate loss:  -78.714935
+probability converged
+strcuture parameter: 
+ [[-1.4121078  2.0383663]
+ [ 2.1068766 -1.8628395]
+ [-2.0459027  2.1038287]
+ [ 1.9573419 -1.5386783]
+ [ 1.9340547 -1.1386886]
+ [ 2.039774  -3.3388128]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.71489, shape=(), dtype=float32)
+----------epoch 750-----------
+batched average loss:  -78.704926 minimum candidate loss:  -78.71542
+probability converged
+strcuture parameter: 
+ [[-1.5486457  2.044221 ]
+ [ 2.1100683 -1.9793621]
+ [-2.2087452  2.1074193]
+ [ 1.9614748 -1.6517526]
+ [ 1.9415028 -1.2752334]
+ [ 2.040354  -3.4345996]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.71529, shape=(), dtype=float32)
+----------epoch 800-----------
+batched average loss:  -78.70724 minimum candidate loss:  -78.715706
+probability converged
+strcuture parameter: 
+ [[-1.6761246  2.0489733]
+ [ 2.1124504 -2.0767663]
+ [-2.356179   2.1101935]
+ [ 1.9651873 -1.7659627]
+ [ 1.9475828 -1.4037517]
+ [ 2.040888  -3.5319211]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.71578, shape=(), dtype=float32)
+----------epoch 850-----------
+batched average loss:  -78.707146 minimum candidate loss:  -78.716
+probability converged
+strcuture parameter: 
+ [[-1.7941713  2.0528421]
+ [ 2.1145341 -2.1708589]
+ [-2.495072   2.112443 ]
+ [ 1.9683096 -1.873641 ]
+ [ 1.9525108 -1.5223396]
+ [ 2.0413687 -3.6284504]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.71607, shape=(), dtype=float32)
+----------epoch 900-----------
+batched average loss:  -78.7064 minimum candidate loss:  -78.716156
+probability converged
+strcuture parameter: 
+ [[-1.9052963  2.056072 ]
+ [ 2.116428  -2.2650344]
+ [-2.6149797  2.1141427]
+ [ 1.9708337 -1.9705917]
+ [ 1.9564775 -1.6300163]
+ [ 2.0417385 -3.709664 ]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.7161, shape=(), dtype=float32)
+----------epoch 950-----------
+batched average loss:  -78.70868 minimum candidate loss:  -78.716194
+probability converged
+strcuture parameter: 
+ [[-2.0024152  2.0586038]
+ [ 2.118079  -2.3553412]
+ [-2.7287471  2.115569 ]
+ [ 1.9729722 -2.0611598]
+ [ 1.9596978 -1.7273917]
+ [ 2.0420485 -3.7835243]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.71626, shape=(), dtype=float32)
+----------epoch 1000-----------
+batched average loss:  -78.709236 minimum candidate loss:  -78.716255
+probability converged
+strcuture parameter: 
+ [[-2.0890145  2.0606542]
+ [ 2.1194224 -2.4355016]
+ [-2.8251827  2.1166544]
+ [ 1.9748812 -2.1497338]
+ [ 1.9623928 -1.8173381]
+ [ 2.0423331 -3.8564188]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.7163, shape=(), dtype=float32)
+----------epoch 1050-----------
+batched average loss:  -78.70964 minimum candidate loss:  -78.71639
+probability converged
+strcuture parameter: 
+ [[-2.1713102  2.0624394]
+ [ 2.1206372 -2.5141587]
+ [-2.9145317  2.1175685]
+ [ 1.9764551 -2.2295291]
+ [ 1.9647512 -1.903589 ]
+ [ 2.0426054 -3.9315948]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.716415, shape=(), dtype=float32)
+----------epoch 1100-----------
+batched average loss:  -78.71134 minimum candidate loss:  -78.71645
+probability converged
+strcuture parameter: 
+ [[-2.2508097  2.064025 ]
+ [ 2.121707  -2.5890632]
+ [-2.9900084  2.1182778]
+ [ 1.9778994 -2.308871 ]
+ [ 1.9667146 -1.9817914]
+ [ 2.0428607 -4.007751 ]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.71633, shape=(), dtype=float32)
+----------epoch 1150-----------
+batched average loss:  -78.71127 minimum candidate loss:  -78.716446
+probability converged
+strcuture parameter: 
+ [[-2.3282008  2.0654507]
+ [ 2.1225874 -2.6554332]
+ [-3.0704703  2.118976 ]
+ [ 1.979131  -2.3820627]
+ [ 1.9684913 -2.0584185]
+ [ 2.043021  -4.058991 ]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.71646, shape=(), dtype=float32)
+----------epoch 1200-----------
+batched average loss:  -78.71121 minimum candidate loss:  -78.71651
+probability converged
+strcuture parameter: 
+ [[-2.3971405  2.0666285]
+ [ 2.1233363 -2.7156253]
+ [-3.1370673  2.119512 ]
+ [ 1.9801984 -2.4503405]
+ [ 1.9700582 -2.1314588]
+ [ 2.043188  -4.115124 ]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.71651, shape=(), dtype=float32)
+----------epoch 1250-----------
+batched average loss:  -78.7114 minimum candidate loss:  -78.71658
+probability converged
+strcuture parameter: 
+ [[-2.4629116  2.0676763]
+ [ 2.12399   -2.7714233]
+ [-3.2108426  2.120065 ]
+ [ 1.9811642 -2.5164592]
+ [ 1.9713552 -2.1963658]
+ [ 2.0433295 -4.1652446]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.71663, shape=(), dtype=float32)
+----------epoch 1300-----------
+batched average loss:  -78.71261 minimum candidate loss:  -78.716644
+probability converged
+strcuture parameter: 
+ [[-2.5254939  2.0686095]
+ [ 2.1245866 -2.8253176]
+ [-3.2772458  2.1205292]
+ [ 1.9819627 -2.5748034]
+ [ 1.9725475 -2.260156 ]
+ [ 2.0434706 -4.218166 ]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.716515, shape=(), dtype=float32)
+----------epoch 1350-----------
+batched average loss:  -78.7126 minimum candidate loss:  -78.71659
+probability converged
+strcuture parameter: 
+ [[-2.5933838  2.0695584]
+ [ 2.1251528 -2.8792071]
+ [-3.333928   2.1209006]
+ [ 1.9826314 -2.626508 ]
+ [ 1.9736465 -2.3228629]
+ [ 2.0436    -4.2689357]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.71656, shape=(), dtype=float32)
+----------epoch 1400-----------
+batched average loss:  -78.71202 minimum candidate loss:  -78.716545
+probability converged
+strcuture parameter: 
+ [[-2.6536944  2.0703475]
+ [ 2.1256707 -2.9312794]
+ [-3.3932536  2.1212678]
+ [ 1.9833143 -2.6822262]
+ [ 1.9745526 -2.377824 ]
+ [ 2.043727  -4.3218265]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.71671, shape=(), dtype=float32)
+----------epoch 1450-----------
+batched average loss:  -78.714294 minimum candidate loss:  -78.71684
+probability converged
+strcuture parameter: 
+ [[-2.7079272  2.071016 ]
+ [ 2.126087  -2.9752023]
+ [-3.4430628  2.1215603]
+ [ 1.9839554 -2.7376072]
+ [ 1.9753978 -2.4319978]
+ [ 2.043829  -4.366425 ]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.7167, shape=(), dtype=float32)
+----------epoch 1500-----------
+batched average loss:  -78.713486 minimum candidate loss:  -78.716576
+probability converged
+strcuture parameter: 
+ [[-2.758717   2.071611 ]
+ [ 2.1265023 -3.021143 ]
+ [-3.490236   2.1218226]
+ [ 1.9844717 -2.784544 ]
+ [ 1.9761652 -2.483947 ]
+ [ 2.043922  -4.408866 ]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.71657, shape=(), dtype=float32)
+----------epoch 1550-----------
+batched average loss:  -78.71391 minimum candidate loss:  -78.716576
+probability converged
+strcuture parameter: 
+ [[-2.8101978  2.0721831]
+ [ 2.126864  -3.0630465]
+ [-3.543699   2.122106 ]
+ [ 1.9849917 -2.83426  ]
+ [ 1.976827  -2.5310595]
+ [ 2.0440238 -4.4574604]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.71647, shape=(), dtype=float32)
+----------epoch 1600-----------
+batched average loss:  -78.712326 minimum candidate loss:  -78.716576
+probability converged
+strcuture parameter: 
+ [[-2.8567433  2.072674 ]
+ [ 2.1272085 -3.1047053]
+ [-3.5923743  2.1223502]
+ [ 1.9854385 -2.8790658]
+ [ 1.9774196 -2.5753114]
+ [ 2.0441055 -4.4976106]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.71666, shape=(), dtype=float32)
+----------epoch 1650-----------
+batched average loss:  -78.71353 minimum candidate loss:  -78.71655
+probability converged
+strcuture parameter: 
+ [[-2.902342   2.073134 ]
+ [ 2.127533  -3.1454988]
+ [-3.642349   2.122589 ]
+ [ 1.9858351 -2.9206302]
+ [ 1.9779946 -2.6202478]
+ [ 2.044154  -4.5231037]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.716606, shape=(), dtype=float32)
+----------epoch 1700-----------
+batched average loss:  -78.714226 minimum candidate loss:  -78.71675
+probability converged
+strcuture parameter: 
+ [[-2.947562   2.0735688]
+ [ 2.1278431 -3.1862006]
+ [-3.6835654  2.1227767]
+ [ 1.98619   -2.9593668]
+ [ 1.978496  -2.6611698]
+ [ 2.0442317 -4.565265 ]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.716644, shape=(), dtype=float32)
+----------epoch 1750-----------
+batched average loss:  -78.712906 minimum candidate loss:  -78.71657
+probability converged
+strcuture parameter: 
+ [[-2.9885924  2.0739465]
+ [ 2.1280823 -3.2186832]
+ [-3.723334   2.1229517]
+ [ 1.9865168 -2.9964554]
+ [ 1.9789772 -2.7020798]
+ [ 2.04431   -4.60873  ]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.71661, shape=(), dtype=float32)
+----------epoch 1800-----------
+batched average loss:  -78.712746 minimum candidate loss:  -78.716736
+probability converged
+strcuture parameter: 
+ [[-3.0310469  2.074322 ]
+ [ 2.1283574 -3.2574022]
+ [-3.7644916  2.1231253]
+ [ 1.9868534 -3.0360813]
+ [ 1.9794074 -2.7401607]
+ [ 2.0443723 -4.6449018]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.71664, shape=(), dtype=float32)
+----------epoch 1850-----------
+batched average loss:  -78.71436 minimum candidate loss:  -78.716545
+probability converged
+strcuture parameter: 
+ [[-3.0668356  2.0746255]
+ [ 2.1286085 -3.2940617]
+ [-3.8017228  2.1232753]
+ [ 1.9871628 -3.0740628]
+ [ 1.9797753 -2.7740235]
+ [ 2.044427  -4.677669 ]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.71659, shape=(), dtype=float32)
+----------epoch 1900-----------
+batched average loss:  -78.71446 minimum candidate loss:  -78.71667
+probability converged
+strcuture parameter: 
+ [[-3.102581   2.0749178]
+ [ 2.1288211 -3.326255 ]
+ [-3.8390622  2.1234205]
+ [ 1.9874467 -3.110254 ]
+ [ 1.9801617 -2.810853 ]
+ [ 2.0444708 -4.7047405]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.71671, shape=(), dtype=float32)
+----------epoch 1950-----------
+batched average loss:  -78.71449 minimum candidate loss:  -78.716805
+probability converged
+strcuture parameter: 
+ [[-3.134982   2.0751734]
+ [ 2.1290197 -3.3573701]
+ [-3.877463   2.1235645]
+ [ 1.987703  -3.1440864]
+ [ 1.9805335 -2.847575 ]
+ [ 2.0445154 -4.732721 ]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.71665, shape=(), dtype=float32)
+----------epoch 1999-----------
+batched average loss:  -78.71433 minimum candidate loss:  -78.7166
+probability converged
+strcuture parameter: 
+ [[-3.1708586  2.0754473]
+ [ 2.1291943 -3.3855197]
+ [-3.9114056  2.1236875]
+ [ 1.9879278 -3.1747541]
+ [ 1.9808623 -2.881229 ]
+ [ 2.0445518 -4.7560596]]
+tf.Tensor([1 0 1 0 0 0], shape=(6,), dtype=int64)
+current recommendation loss:  tf.Tensor(-78.71664, shape=(), dtype=float32)
