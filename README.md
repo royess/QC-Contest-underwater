@@ -17,3 +17,11 @@ Structure model:
 - [ ] More seeds for initializing parameters.
 - [ ] Add process bar.
 - [ ] Improve training settings.
+
+Results:
+
+| depth | energy     | error | duration |
+| ----- | ------     | ----- | -------- |
+| 3     | -78.70827  | 5.95  |          |
+| 8     | -78.72387  | 3.85  |          |
+| 10    | -78.730896 | 2.91  |          |

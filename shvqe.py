@@ -247,7 +247,7 @@ def train_hybrid(stddev=0.05, lr=None, epochs=2000, debug_step=50, batch=256, ve
     params = K.ones([n//2, 2], dtype=float)
     paramq = K.implicit_randn([nlayersq, n, 3], stddev=stddev) * 2*np.pi
     if lr is None:
-        lr = tf.keras.optimizers.schedules.ExponentialDecay(0.06, 1000, 0.5)
+        lr = tf.keras.optimizers.schedules.ExponentialDecay(0.6, 100, 0.8)
     structure_opt = K.optimizer(tf.keras.optimizers.Adam(lr))
 
     avcost = 0
