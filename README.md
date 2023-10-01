@@ -13,10 +13,15 @@ Structure model:
 
 ### SHVQE
 
+Training:
 - [x] Implement SHVQE.
 - [ ] More seeds for initializing parameters.
+- [x] Improve training settings.
 - [ ] Add process bar.
-- [ ] Improve training settings.
+
+To qiskit:
+- [x] Hamiltonian conversion. (By Stim.)
+- [ ] Full run in qiskit with noise.
 
 Results:
 
