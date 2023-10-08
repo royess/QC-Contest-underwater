@@ -17,27 +17,27 @@ Training:
 - [x] Implement SHVQE.
 - [ ] More seeds for initializing parameters.
 - [x] Improve training settings.
-- [ ] Add process bar.
 
 To qiskit:
 - [x] Hamiltonian conversion. (By Stim.)
-- [ ] Full run in qiskit with noise.
+- [x] Full run in qiskit with noise.
 
 Results:
 
 Clifford + 1 layer single rotation:
 
-| depth | energy     | error | duration |
-| ----- | ------     | ----- | -------- |
-| 3     | -78.70827  | 5.95  | 7872     |
-| 8     | -78.72387  | 3.85  | 19392    |
-| 10    | -78.730896 | 2.91  | 24160    |
-| 12    | -78.73086  | 2.91  | -        |
-| 16    | -78.74805  | 0.60  | -        |
+| depth | energy     | error (1e-2) | duration |
+| ----- | ------     | ------------ | -------- |
+| 3     | -78.70827  | 0.0595         | 7872     |
+| 8     | -78.72387  | 0.0385         | 19392    |
+| 10    | -78.730896 | 0.0291         | 24160    |
+| 12    | -78.73086  | 0.0291         | -        |
+| 16    | -78.74805  | 0.0060         | -        |
 
 Only Clifford:
 
-| depth | energy     | error | duration |
-| ----- | ------     | ----- | -------- |
-| 8     | -78.721466 | 4.17  | 19392    |
-| 10    | -78.74937  | 0.42  | 24160    |
+| depth | energy     | error  (1e-2) | duration |
+| ----- | ------     | ------------- | -------- |
+| **0** | -78.67825  | **0.0998**    |          |
+| 8     | -78.721466 | 0.0417        | 19392    |
+| 10    | -78.74937  | 0.0042        | 24160    |
