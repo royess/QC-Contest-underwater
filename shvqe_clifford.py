@@ -17,7 +17,7 @@ K = tc.set_backend("tensorflow")
 n = 12 # the number of qubits (must be even for consistency later)
 # ncz = 3 # number of cz layers in Schrodinger circuit
 ncz = int(sys.argv[1]) # number of cz layers in Schrodinger circuit
-nlayersq = ncz + 2 # Schrodinger parameter layers
+nlayersq = ncz + 1 # Schrodinger parameter layers
 
 # training setup
 epochs = 2000
@@ -34,51 +34,6 @@ config = tf.compat.v1.ConfigProto()
 config.gpu_options.allow_growth = True
 sess = tf.compat.v1.Session(config = config)
 tf.compat.v1.keras.backend.set_session(sess) # The name tf.keras.backend.set_session is deprecated. Please use tf.compat.v1.keras.backend.set_session instead.
-
-# Uncomment to directly generate Hamiltonian
-# def read_paul_string_sum_from_file(path):
-#     with open(path, 'r') as file:
-#         pauli_text_lines = file.readlines()
-#     l = []
-#     weight = []
-#     for line in pauli_text_lines:
-#         line = line.replace(' ', '')
-#         coeff, pauli_text_string = line.split("*")
-#         coeff = float(coeff)
-#         weight.append(coeff)
-#         ps = []
-#         for c in pauli_text_string:
-#             if c == 'I':
-#                 ps.append(0)
-#             elif c == 'X':
-#                 ps.append(1)
-#             elif c == 'Y':
-#                 ps.append(2)
-#             elif c == 'Z':
-#                 ps.append(3)
-#         l.append(ps)
-#     return l, weight
-
-# def remove_small_elements(sparse_tensor, thres=1e-6):
-#     # Extract the values, indices, and shape from the SparseTensor
-#     # TODO: maybe propose as an issue for tc
-#     # because their sparse matrix from pauli has lots of small values which should be 0
-#     values = sparse_tensor.values
-#     indices = sparse_tensor.indices
-#     shape = sparse_tensor.dense_shape
-
-#     # Find the indices of elements with absolute value >= thres
-#     mask = tf.abs(values) >= thres
-#     valid_indices = tf.boolean_mask(indices, mask)
-#     valid_values = tf.boolean_mask(values, mask)
-
-#     # Create a new SparseTensor with the valid values and indices
-#     new_sparse_tensor = tf.SparseTensor(valid_indices, valid_values, shape)
-
-#     return new_sparse_tensor
-
-# ham_coo = qu.PauliStringSum2COO(*read_paul_string_sum_from_file('Hamiltonian/OHhamiltonian.txt'))
-# ham_coo = remove_small_elements(ham_coo)
 
 ham_coo_numpy = load_npz('Hamiltonian/OHham.npz')
 ham_coo_indices = np.mat([ham_coo_numpy.row, ham_coo_numpy.col]).transpose()
@@ -115,7 +70,7 @@ def hybrid_ansatz(structure, paramq, preprocess="direct", train=True):
     # quantum variational in Schrodinger part, first consider a ring topol
     for j in range(nlayersq):
         if j !=0 and j!=nlayersq-1:
-            for i in range(j%2,n-1,2):
+            for i in range(j%2,n,2):
                 c.cz(i, (i+1)%n)
         for i in range(n):
             c.rx(i, theta=paramq[j, i, 0])
