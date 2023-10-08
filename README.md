@@ -41,3 +41,14 @@ Only Clifford:
 | **0** | -78.67825  | **0.0998**    |          |
 | 8     | -78.721466 | 0.0417        | 19392    |
 | 10    | -78.74937  | 0.0042        | 24160    |
+
+Without error mitigation, depth-0 cz circuits: (see `run_shvqe_qiskit_ncz0.ipynb`)
+
+- Duration: 320
+- Shots: 1799612
+- Error (%):
+  - Noiseless: 0.10
+  - Fake Kolkata: 1.39
+  - Fake Cairo: 0.80
+  - Fake Montreal: 1.65
+
