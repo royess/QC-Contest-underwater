@@ -14,6 +14,9 @@ For running the optmized circuit,
 ```python
 pip install stim
 pip install pylatexenc
+pip install qiskit-aer
+pip install qiskit-ignis
+pip install qiskit-ibm-provider
 ```
 
 For training,
