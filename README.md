@@ -19,7 +19,7 @@ pip install qiskit-ignis
 pip install qiskit-ibm-provider
 pip install qiskit-ibm-experiment
 pip install qiskit-nature
-qiskit-dynamics
+pip install qiskit-dynamics
 ```
 
 For training,
