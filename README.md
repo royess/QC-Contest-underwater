@@ -1,54 +1,42 @@
 # Submission code for the ACM/IEEE Quantum Computing for Drug Discovery Challenge at ICCAD 2023
 
-Structure model:
+Team name: underwater
 
-![](.assets/Layout-of-ibmq-montreal.png)
+More detailed technical reflection is provided in `tech_reflect.pdf`.
 
-## Files
+Credit: some of codes are modified from `tensorcircuit`, `qiskit` and also the demo provided by commitee.
 
-- `haml2tc.py` for constructing and saving Hamiltonian in sparse matrix format.
-- `shvqe.py` for running SHVQE algorithm with the depth of cz gates as the input argument.
+## Requirements
 
-## Tasks
+Some basic packages, `qiskit`, and `jupyter` are required.
 
-### SHVQE
+For running the optmized circuit,
+```python
+pip install stim
+pip install pylatexenc
+```
 
-Training:
-- [x] Implement SHVQE.
-- [ ] More seeds for initializing parameters.
-- [x] Improve training settings.
+For training,
+```python
+pip install tensorcircuit-nightly
+pip install tensorflow
+```
 
-To qiskit:
-- [x] Hamiltonian conversion. (By Stim.)
-- [x] Full run in qiskit with noise.
+## Instructions
 
-Results:
+The code for running optmized circuits is in `run_shvqe_qiskit_ncz0.ipynb`.
 
-Clifford + 1 layer single rotation:
+If you want to train SHVQE for yourself, please run
+```bash
+python shvqe_clifford.py <n>
+```
+where $n$ is the depth of CZ gates in Schrodinger circuit.
 
-| depth | energy     | error (1e-2) | duration |
-| ----- | ------     | ------------ | -------- |
-| 3     | -78.70827  | 0.0595         | 7872     |
-| 8     | -78.72387  | 0.0385         | 19392    |
-| 10    | -78.730896 | 0.0291         | 24160    |
-| 12    | -78.73086  | 0.0291         | -        |
-| 16    | -78.74805  | 0.0060         | -        |
+## Saved models
 
-Only Clifford:
+We saved the optimized circuit in `saved_models`.
 
-| depth | energy     | error  (1e-2) | duration |
-| ----- | ------     | ------------- | -------- |
-| **0** | -78.67825  | **0.0998**    |          |
-| 8     | -78.721466 | 0.0417        | 19392    |
-| 10    | -78.74937  | 0.0042        | 24160    |
+- `shvqe_clifford_ncz0_sch.qasm`: optimized circuit. 
+- `shvqe_clifford_ncz0_sch_transpiled.qasm`: transplied optimized circuit.
 
-Without error mitigation, depth-0 cz circuits: (see `run_shvqe_qiskit_ncz0.ipynb`)
-
-- Duration: 320
-- Shots: 1799612
-- Error (%):
-  - Noiseless: 0.10
-  - Fake Kolkata: 1.39
-  - Fake Cairo: 0.80
-  - Fake Montreal: 1.65
-
+Also, we save the Heisenberg circuit as `shvqe_clifford_ncz0_hei.qasm`, which is required by the notebook `run_shvqe_qiskit_ncz0.ipynb`. Note that it is **not** real circuit but virtual circuit that is used in preprossing the Hamiltonian.
