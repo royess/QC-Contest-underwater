@@ -91,6 +91,7 @@ class EstimatorRem(BaseEstimator):
             skip_transpilation: If True, transpilation is skipped.
             abelian_grouping: Whether the observable should be grouped into commuting.
                 If approximation is True, this parameter is ignored and assumed to be False.
+            measurement_noise_matrix_inv: the inversed measurement error matrices for readout error mitigation.
         """
         super().__init__(options=run_options)
 
@@ -579,15 +580,13 @@ def _pauli_expval_with_variance(counts: dict, paulis: PauliList, measurement_noi
         denom += freq
     
     distribution = distribution/denom
+    # apply the inversed matrices to mitigate readout errors
     calib_matrix = functools.reduce(np.kron, measurement_noise_matrix_inv[::-1])
     new_distribution = calib_matrix @ distribution
     for outcome, val in enumerate(new_distribution):
         for k in range(size):
             coeff = (-1) ** _parity(diag_inds[k] & outcome)
             expvals[k] += val * coeff
-    # pdb.set_trace()
-        
-
 
     variances = 1 - expvals**2
     return expvals, variances
